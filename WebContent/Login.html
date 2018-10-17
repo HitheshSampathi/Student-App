@@ -1,0 +1,88 @@
+<!doctype html>
+<title>Login</title>
+<meta charset="UTF-8">
+<head>
+
+<style>
+form {
+	margin-top: 5%;
+}
+
+body {
+	background-color: #c7cccb;
+	font-family: "Lato", sans-serif
+}
+
+input[type=text], input[type=password], select {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 6px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+}
+
+input[type=submit] {
+	width: 100%;
+	background-color: #4CAF50;
+	color: white;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: none;
+}
+
+li {
+	float: left;
+}
+
+li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 16px;
+	text-decoration: none;
+}
+
+li a:hover {
+	background-color: #caccce;
+}
+</style>
+</head>
+
+<body>
+
+	<form name="myform" action="./loginServ" method="post">
+		<h1 align="center">Student Login</h1>
+		<table align="center">
+
+			<tr>
+				<th>SID</th>
+				<td><input type="text" name="sid" id="name"
+					placeholder="enter the sid" required /></td>
+
+			</tr>
+			<tr>
+				<th>Password</th>
+				<td><input type="password" name="password"
+					placeholder="enter password" required /></td>
+
+			</tr>
+			<tr>
+				<td />
+				<td><input type="submit" name="submit">
+			</tr>
+		</table>
+	</form>
+
+</body>
